@@ -1,0 +1,204 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue233;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c93333;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 JavaScript Syntax, Part I\
+Challenge Project: Number Guesser\
+\
+\pard\pardeftab720\sl280\sa319\partightenfactor0
+
+\b \cf2 Overview\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+
+\b0 \cf2 This project is slightly different than others you have encountered thus far on Codecademy. Instead of a step-by-step tutorial, this project contains a series of open-ended requirements which describe the project you\'92ll be building. There are many possible ways to correctly fulfill all of these requirements, and you should expect to use the internet, Codecademy, and other resources when you encounter a problem that you cannot easily solve. \
+\pard\pardeftab720\sl280\sa319\partightenfactor0
+
+\b \cf2 Project Goals\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+
+\b0 \cf2 In this project, you\'92ll write JavaScript functions to power a small guessing game. Your code will run in the browser instead of just the terminal, but you have an output section to help you test your functions and show you if you have syntax errors.\
+\pard\pardeftab720\sl280\sa319\partightenfactor0
+
+\b \cf2 Setup Instructions\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+
+\b0 \cf2 If you choose to do this project on your computer instead of Codecademy, you can download what you\'92ll need by clicking the \'93Download\'94 button below. You\'92ll need to open and work in 
+\b script.js
+\b0  in a text editor, and open 
+\b index.html
+\b0  in a browser to test your code. If you need help setting up on your own computer, read our {\field{\*\fldinst{HYPERLINK "https://www.codecademy.com/articles/visual-studio-code"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 article about setting up a text editor for web development}}.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\pard\pardeftab720\sl440\sa298\partightenfactor0
+
+\b\fs36 \cf2 Prerequisites\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\b0\fs24 \cf2 \
+1.\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 In order to complete this project, you should have completed the first 3 sections of {\field{\*\fldinst{HYPERLINK "https://www.codecademy.com/courses/introduction-to-javascript"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 Introduction to JavaScript}} (through Learn JavaScript: Functions).\
+\pard\pardeftab720\sl440\sa298\partightenfactor0
+
+\b\fs36 \cf2 Project Requirements\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\b0\fs24 \cf2 \
+2.\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 In this project, you\'92ll write four functions in 
+\b script.js
+\b0 . We\'92ve provided some additional JavaScript code in 
+\b game.js
+\b0  that will call your functions based on user interactions, but you don\'92t need to look at 
+\b game.js
+\b0  and shouldn\'92t edit it if you want your project to work as intended. As you complete this project, make sure that all of your functions are named exactly as specified so that they can be called correctly when the game is played.\
+This JavaScript project is probably different from most of the ones you\'92ve completed at Codecademy. Instead of just seeing text output from your program, your JavaScript functions are incorporated into a website that also uses HTML/CSS. You\'92ll learn more about how to do this from scratch as you continue your JavaScript journey.\
+Experiment with a {\field{\*\fldinst{HYPERLINK "https://content.codecademy.com/PRO/independent-practice-projects/number-guesser/example/index.html"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 completed version}} of the project to get a sense of what you\'92ll be building.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+3.\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 Create a 
+\f1 generateTarget()
+\f0  function. This function will be called at the start of each new round in order to generate the new secret target number.\
+This function should return a random integer between 
+\f1 0
+\f0  and 
+\f1 9
+\f0 .\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor"}}{\fldrslt 
+\f1 \cf3 \ul \ulc3 \strokec3 Math.floor()}} and {\field{\*\fldinst{HYPERLINK "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random"}}{\fldrslt 
+\f1 \cf3 \ul \ulc3 \strokec3 Math.random()}} should help to generate this number.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+4.\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 Create a 
+\f1 compareGuesses()
+\f0  function. This function will be called each round to determine which guess is closest to the target number.\
+This function:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl280\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Has three parameters representing the user (human) guess, a computer guess, and the secret target number to be guessed.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Determines which player (human or computer) wins based on which guess is closest to the target. If both players are tied, the human user should win.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Return 
+\f1 true
+\f0  if the human player wins, and 
+\f1 false
+\f0  if the computer player wins.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 You\'92ll want to compare the {\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Absolute_value#Real_numbers"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 absolute value}} of the difference between the target and each guess, because each guess could be greater or less than the target, and the only thing that matters is the distance between the two.\
+The JavaScript {\field{\*\fldinst{HYPERLINK "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs"}}{\fldrslt 
+\f1 \cf3 \ul \ulc3 \strokec3 Math.abs()}} method can help to find absolute values (or you can write your own absolute value function!).\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+5.\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 Create an 
+\f1 updateScore()
+\f0  function. This function will be used to correctly increase the winner\'92s score after each round.\
+This function:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl280\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Has a single parameter. This parameter will be a string value representing the winner.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Increases the score variable (
+\f1 humanScore
+\f0  or 
+\f1 computerScore
+\f0 ) by 1 depending on the winner passed in to 
+\f1 updateScore
+\f0 . The string passed in will be either 
+\f1 'human'
+\f0  or 
+\f1 'computer'
+\f0 .\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Does not need to return any value.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+6.\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 Create an 
+\f1 advanceRound()
+\f0  function. This function will be used to update the round number after each round.\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+
+\f1 \cf2 advanceRound()
+\f0  should increase the value of 
+\f1 currentRoundNumber
+\f0  by 1.\
+After completing 
+\f1 advanceRound()
+\f0 , your Number Guesser game should be fully operational. You should be able to make guesses, see your or the computer score increase correctly, move to the next round, and see the correct round displayed.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+7.\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 Test that your code is working properly by invoking your newly written functions within 
+\b script.js
+\b0  with sample inputs. You can delete this code once you\'92re convinced that everything is working as it should. \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 For example, we added the following code to our 
+\b script.js
+\b0  file:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf2 updateScore('human');\
+console.log(humanScore); // To confirm that this value increased by 1\
+updateScore('computer');\
+console.log(computerScore); // To confirm that this value increased by 1\
+\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+
+\f0 \cf2 This will also surface any syntax errors that may have cropped up in our code. \
+\pard\pardeftab720\sl440\sa298\partightenfactor0
+
+\b\fs36 \cf2 Project Extensions & Solution\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\b0\fs24 \cf2 \
+8.\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 Great work! If you\'92d like to see the solution, move to the next task. If you\'92d like to extend your project on your own, you could consider the following:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl280\partightenfactor0
+\ls3\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 You probably calculated the distance from the computer guess to the target and from the human guess to the target. Move this into a separate 
+\f1 getAbsoluteDistance()
+\f0  function that takes two numbers and returns the distance, and then use that inside your 
+\f1 compareGuesses()
+\f0  function.\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Add functionality to check whether the user guess is between 0 and 9 and 
+\f1 alert()
+\f0  the user that their number is out of range. It\'92s not possible to set a number outside this range with the 
+\f1 +
+\f0  and 
+\f1 =
+\f0  buttons, but users can do so by typing directly in the input field.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+9.\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 Great work! Visit {\field{\*\fldinst{HYPERLINK "https://discuss.codecademy.com/t/number-guesser-challenge-project-javascript/462394"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 our forums}} to compare your project to our sample solution code. You can also learn how to host your own solution on GitHub so you can share it with other learners! Your solution might look different from ours, and that\'92s okay! There are multiple ways to solve these projects, and you\'92ll learn more by seeing others\'92 code. \
+}
